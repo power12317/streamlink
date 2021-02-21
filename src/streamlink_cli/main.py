@@ -783,6 +783,9 @@ def setup_options():
 
     if args.hls_segment_ignore_names:
         streamlink.set_option("hls-segment-ignore-names", args.hls_segment_ignore_names)
+    
+    if args.hls_segment_include_names:
+        streamlink.set_option("hls-segment-include-names", args.hls_segment_include_names)
 
     if args.hls_segment_key_uri:
         streamlink.set_option("hls-segment-key-uri", args.hls_segment_key_uri)

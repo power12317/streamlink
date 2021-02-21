@@ -1,5 +1,9 @@
 # Changelog
 
+## streamlink 2.0.0 power_mod (2021-02-21)
+
+- New option --hls-segment-include-names
+
 ## streamlink 2.0.0 (2020-12-22)
 
 Release highlights:

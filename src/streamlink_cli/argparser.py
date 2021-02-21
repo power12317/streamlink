@@ -867,7 +867,21 @@ def build_parser():
 
         Example: --hls-segment-ignore-names 000,001,002
 
-        This will ignore every segment that ends with 000.ts, 001.ts and 002.ts
+        This will ignore every segment that with 000, 001 and 002
+
+        Default is None.
+        """
+    )
+    transport.add_argument(
+        "--hls-segment-include-names",
+        metavar="NAMES",
+        type=comma_list,
+        help="""
+        A comma-delimited list of segment names that will get filtered out.
+
+        Example: --hls-segment-include-names 000,001,002
+
+        This will include every segment that with 000, 001 and 002
 
         Default is None.
         """
